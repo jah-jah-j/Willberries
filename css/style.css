@@ -1,0 +1,50 @@
+h1{
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.header{
+    padding: 15px 0;
+}
+
+.navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #939699;
+}
+
+.navigation-link{
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background: #4592FF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.button-img{
+    margin-right: 10px;
+}
+
+.button-text{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+}
