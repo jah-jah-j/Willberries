@@ -1,16 +1,34 @@
-h1{
-    font-family: 'Roboto Slab', serif;
+* {
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
-.header{
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
     padding: 15px 0;
 }
 
-.navigation{
+.navigation {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -28,7 +46,7 @@ body{
     letter-spacing: 0.5px;
 }
 
-.button{
+.button {
     display: flex;
     align-items: center;
     border: none;
@@ -36,15 +54,335 @@ body{
     border-radius: 20px;
     padding: 10px 20px;
     color: #fff;
-}
-
-.button-img{
-    margin-right: 10px;
-}
-
-.button-text{
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
     line-height: 20px;
+    max-width: max-content;
+}
+
+.button-img, .button-price {
+    margin-right: 10px;
+}
+
+.button-icon {
+    margin-left: 10px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slide {
+    padding: 90px 0 110px;
+    min-height: 569px;
+}
+
+.slide-1 {
+    background: #B4D1E0 url("../img/slide-1.png") no-repeat top right 30%;
+}
+
+.slide-2 {
+    background: #e0ceb4 url("../img/slide-1.png") no-repeat top right 30%;
+}
+
+.slide-3 {
+    background: #d4b4e0 url("../img/slide-1.png") no-repeat top right 30%;
+}
+
+.label {
+    background: #3DC47E;
+    border-radius: 3px;
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: max-content;
+}
+
+.slide-title {
+    color: #262D33;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 70px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.slide-text {
+    color: #4B5157;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 335px;
+}
+
+.slider-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.slider-button {
+    border: none;
+    background-color: transparent;
+}
+
+
+.card {
+    height: 370px;
+    padding: 60px 45px 80px 45px;
+    border-radius: 10px;
+    border: none;
+}
+
+.card-1 {
+    background: gray url("../img/card-image-1.jpg") no-repeat top right;
+    background-size: cover;
+}
+
+.card-2 {
+    background: black url("../img/card-image-2.jpg") no-repeat top right;
+    background-size: cover;
+}
+
+.card-3 {
+    padding-top: 35px;
+    background: #CCD5E6 url("../img/card-image-3.png") no-repeat top right 10%;
+    background-size: contain;
+}
+
+.card-4 {
+    padding-top: 35px;
+    padding-left: 26px;
+    background: #FF4F52 url("../img/card-image-4.png") no-repeat top right;
+    background-size: contain;
+}
+
+.card-4.card-title {
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #262D33;
+    max-width: 221px;
+    margin-bottom: 15px;
+}
+
+.card-4 .card-title {
+    margin-bottom: 10px;
+}
+
+.text-pink {
+    color: #FFC4C9;
+}
+
+.card-title.text-large {
+    max-width: 419px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.card-description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
+    max-width: 175px;
+    margin-bottom: 25px;
+}
+
+.card-4 .card-description {
+    margin-bottom: 15px;
+}
+
+
+.card-description.text-large {
+    margin-bottom: 40px;
+    max-width: 319px;
+}
+
+.card-price {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.section-title {
+    color: #262D33;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.link-more {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: #262D33;
+    padding: 10px;
+}
+
+.goods-card {
+    position: relative;
+    padding: 30px 35px 35px;
+    text-align: center;
+}
+
+.goods-card:hover {
+    cursor: pointer;
+    outline: 1px solid gray;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.03);
+    transform: scale(1.1);
+}
+
+.goods-card .label {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+.goods-title {
+    color: #262D33;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.goods-description {
+    color: #4B5157;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.goods-price {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #262D33;
+}
+
+.footer {
+    background: #8F79D4;
+    padding: 45px 0 40px;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.footer-nav-item {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.footer-nav-link {
+    color: inherit;
+}
+
+.footer-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #E7D9FF;
+}
+
+a.social-logo {
+    display: block;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+a.social-logo:first-child {
+    margin-left: 25px;
+}
+
+.footer-line {
+    color: rgba(255, 255, 255, 0.5);
+    margin: 44px 0 30px;
+}
+
+.footer-top {
+    border: none;
+    background-color: transparent;
+}
+
+.footer-top-text {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.payments-logo:not(:last-child) {
+    margin-right: 25px;
+}
+
+@media (max-width: 1200px) {
+    .slide-1, .slide-2, .slide-3 {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 992px) {
+    .slide {
+        min-height: 420px;
+        max-height: max-content;
+        padding: 40px 0 50px;
+    }
+
+    .slide-title {
+        font-size: 36px;
+        line-height: 1.2;
+        margin: 10px 0;
+    }
+
+    .card {
+        padding: 30px;
+        height: max-content;
+    }
+
+    .card-1, .card-2 {
+        background-position: left top;
+    }
+
+    .card-title.text-large {
+        font-size: 30px;
+        line-height: 35px;
+        margin: 15px 0;
+    }
+
+    .card-description.text-large {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-nav-item:not(:last-child) {
+        margin-right: 15px;
+    }
 }
